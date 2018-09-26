@@ -43,6 +43,6 @@ application/logs/*
 /bdd/
 /assets/img/*
 /application/config/email\.php
-/application/config/database\.php
+/application/config/database.php
 \.editorconfig
 .editorconfig
