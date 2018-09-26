@@ -1,0 +1,58 @@
+.row {
+    margin-bottom: .8rem;
+}
+.input-field {
+   margin-top: .3rem;
+}
+[type="radio"] + label {
+    padding-left: 30px !important;
+    padding-right: 35px;
+}
+
+[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:after {
+    background-color: #8791BF;
+}
+[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:before, [type="radio"].with-gap:checked + label:after {
+    border: 2px solid #8791BF;
+}
+
+.arrival-infos {
+    display: none;
+}
+.fields-add-btn, .return-fields-btn {
+    display: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.remove-step-btn { 
+    display: none;
+    margin-left: 5rem;
+    cursor: pointer;
+}
+.radio-btn-fields {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+.multi-fields h4 {
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+.infos-passengers {
+    border-top: 1px solid #ddd;
+    margin-top: 1rem;
+    padding-top: 1rem
+}
+.personnel-infos {
+    border-top: 1px solid #ddd;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+.personnel-infos + .row {
+    margin-bottom: 5rem;
+}
+.multi-fields .input-field {
+    margin-top: .2rem;
+}
+.multi-filds.row {
+    margin-bottom: 0;
+}

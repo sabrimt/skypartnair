@@ -1,0 +1,386 @@
+/*
+                   CSS PAGE BLOG
+*/
+
+body {
+    background-color: #e9e9e9;
+}
+.card {
+    box-shadow: none;
+}
+/*  CATEGORIES DROPDOWN  */
+.categories-drop-list {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.categories-drop-list #dropdown-cat {
+    width: max-content;
+}
+.categories-drop-list .dropdown-button{
+    font-weight: 500;
+    font-size: 12pt;
+    transition: all .3s;
+}
+.categories-drop-list .dropdown-button:hover{
+    font-weight: 600;
+    font-size: 12.1pt;
+    background-color: transparent;
+}
+.categories-drop-list .dropdown-button .material-icons {
+    vertical-align: middle;
+}
+.categories-drop-list + .social-scroll {
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+.categories-drop-list + .social-scroll p{
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.categories-drop-list + .social-scroll img{
+    width: 20px;
+}
+/*  categories dropdown  */
+
+/*  ARTICLE PRINCIPAL  */
+
+.card-content > h2 {
+    text-transform:uppercase;
+    margin-top:0;
+    margin-bottom:5px;
+    font-weight: 600;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+}
+
+.card-content > p {
+    word-wrap: break-word;
+}
+
+.principal-art-description {
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+.principal-art-description p{
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.principal-art-description:first-letter {
+    font-weight: 700;
+    margin-left: 10pt;
+    text-transform: uppercase;
+}
+
+.card-content > blockquote.mcecontent *{
+    font-size: 15px;
+    font-weight: 400;
+    color: #4e4e4e;
+    line-height: 1.3rem;
+}
+
+.card-content > blockquote{
+    border-color: #9B3532;
+}
+
+.horizontal.card .card-content {
+    position: relative;
+}
+
+.horizontal.card .card-content:after {
+    position: absolute;
+    bottom: 0;  
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: linear-gradient(to top,
+    rgba(255,255,255, 1) 1%, 
+    rgba(255,255,255, 0) 17%);
+
+    pointer-events: none; /* so the text is still selectable */
+}
+
+.horizontal.card {
+    height: 400px;
+}
+
+.horizontal.card .card-image {
+    overflow: hidden;
+    position: relative;
+}
+
+.horizontal.card .card-action {
+    margin-top: 5px;
+}
+
+.principal-art-img {
+    position: absolute;
+    height : 400px;
+/*    width: 650px !important;*/
+    margin-left: auto;
+    margin-right: auto;
+    -moz-max-width: initial !important;
+    -webkit-max-width: initial !important;
+    max-width: initial !important;
+}
+
+/*Hover effects*/
+.tile
+{
+  background-size:cover;
+  /*position:relative;*/
+  /*cursor:pointer;*/
+  background-color:white;
+  /*box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);*/
+  overflow:hidden;
+  /*color:white;*/
+  transition: all 0.3s ease-out;
+  transition: background-color 2s ease-out;
+}
+.tile img
+{
+    z-index:0;
+    transition: all 1.25s ease-out;
+    transform:scale(1);
+}
+.tile .text
+{
+    top:0;
+    height: 100% !important;
+    position:absolute;
+    padding:30px;
+    color: #ddd;
+}
+.tile h1
+{
+    font-weight:400;
+    margin:0;
+    text-shadow: 1px 1px 4px rgba(0,0,0,1);
+    transition: all 0.4s ease-in-out;
+}
+.tile h2
+{
+    font-weight:100;
+    margin:70px 0 0 0;
+    font-style:italic;
+    transform: translateX(300px);
+}
+.tile p
+{
+    font-weight:300;
+    margin:20px 0 0 0;
+    line-height: 25px;
+    opacity:0; 
+    transform: translateX(-300px);
+    transition-delay: 0.2s;
+}
+.tile a
+{
+    position: absolute;
+    height: 2.1rem;
+    bottom: 40px;
+    line-height: 2.1rem;
+    right: 40px;
+    border: 2px solid #eee;
+    font-weight:200;
+    transform: translateY(-30px);
+    transition: all 0.3s ease-in-out;
+}
+.tile a:hover
+{
+    background-color: rgba(200,200,200,.3) !important;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.animate-text
+{
+    opacity:0;
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover .tile
+{
+    background-color:#222;
+    transition: background-color 0s ease-out;
+}
+
+.card:hover .tile img
+{
+    opacity: 0.2;
+    transform:scale(1.15);
+    transition: all 1.3s ease-in-out;
+}
+
+.card:hover .tile .text
+{
+    opacity:1;
+}
+
+.card:hover .tile .animate-text
+{
+    transform:translateX(0);
+    transform:translateY(0);
+    opacity:1;
+}
+
+.card:hover h1
+{
+    transform:translateY(20px);
+}
+/*  END article principal  */
+
+
+/*  ARTICLES CARD  */
+
+.article_item_abs { /*  position absolute  */
+    position:absolute;
+}
+
+.article_item .card {
+    transform: translateY(0);
+    transition: all .3s;
+}
+
+.article_item .card:hover {
+    transform: translateY(-8px);
+}
+
+.article_item .card .card-image.tile .card-title,
+.article_title_item.card .card-image.tile .card-title
+{
+    line-height: initial;
+    text-shadow: 1px 1px 3px rgba(0,0,0,1);
+    transition: all .3s;
+    transition-delay: .2s;
+}
+
+.article_item .card:hover .card-image.tile .card-title,
+.article_title_item.card:hover .card-image.tile .card-title
+{
+    font-size: 15pt;
+    padding-top: 1rem;
+    bottom: 100%;
+    transform: translateY(100%);
+    transition-delay: 0s;
+}
+@media all and (min-width: 993px) and (max-width: 1250px)
+{
+    .article_item .card:hover .card-image.tile .card-title,
+    .article_title_item.card:hover .card-image.tile .card-title
+    {
+        line-height: 12pt;
+        font-size: 10pt;
+        padding-top: .4rem;
+    }
+}
+
+.article_item .card .card-image.tile + .card-content p.text-transfert,
+.article_title_item.card .card-image.tile + .card-content p.text-transfert
+{
+    transition-delay: .2s;
+    transition: all .5s;
+}
+
+.article_item .card:hover .card-image.tile + .card-content p.text-transfert,
+.article_title_item.card:hover .card-image.tile + .card-content p.text-transfert
+{
+    transform: translateY(-200%);
+    color: #ddd;
+}
+
+.article_item .tile a,
+.article_title_item .tile a
+{
+    position: absolute;
+    bottom: 35px;
+    right: auto;
+    left: 24px;
+    border: 1px solid white;
+    font-weight:200;
+    transform: translateX(100px);
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0s;
+}
+
+.article_item .card:hover .card-image.tile a
+{
+    transition-delay: .2s;
+}
+
+.article_item .tile a:hover
+{
+    background-color: rgba(200,200,200,.3) !important;
+    transition: background-color 0.2s ease-in-out;
+}
+/*  END articles card  */
+
+/* BLOCKS VOIRAUSSI */
+.article_voiraussi
+{
+    display: block;
+    cursor: pointer;
+    height: 100px;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    background-color: #f6f6f6;
+    transition: all 0.2s ease-out;
+}
+.article_voiraussi:hover
+{
+    background-color: #fff;
+}
+.article_voiraussi .image-container
+{
+    overflow: hidden;
+    height: 100%;
+    width: 120px;
+}
+.article_voiraussi img
+{
+    height: 100%;
+}
+.article_voiraussi .voiraussi-content
+{
+    padding: .8rem;
+    height: 100%;
+    width: calc(100% - 120px);
+}
+.article_voiraussi .voiraussi-content h4
+{
+    font-size: 12pt;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #222;
+    margin: 0;
+    transition: all 0.2s ease-out;
+}
+.article_voiraussi:hover h4
+{
+    /*color: #47559D;*/
+    color: #9B3532;
+}
+
+/* PAGINATION */
+/*#ajax_pagingsearc a {
+    margin: 0 1rem;
+}*/
+
+/* PAGE CONTENU ARTICLE */
+.article_content p, .article_content h3 {
+    line-height: 1.4rem;
+}
+.article_content img {
+    width:100%;
+    height: initial;
+}
+.logo-rs {
+    width:40px;
+}
+
+/* FIN PAGE CONTENU ARTICLE */

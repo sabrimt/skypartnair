@@ -1,0 +1,193 @@
+/********  FLEET LIST  *********/
+ul.list-container {
+    margin-bottom: 4rem;
+}
+.fleet-item {
+    position: relative;
+    min-height: 80px;
+    margin-bottom: .6rem;
+    border: 1px solid #ddd;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+}
+.fleet-item i.material-icons {
+    vertical-align: middle;
+    font-size: 15.5pt;
+    margin-right: .2rem;
+}
+.fleet-item i.material-icons + * {
+    vertical-align: middle;
+}
+.fleet-manu {
+    margin-left: .2rem !important;
+    font-size: 10pt;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.fleet-manu * {
+    vertical-align: middle;
+}
+.min-fleet-flag {
+    height: 15px;
+    margin-right: .5rem;
+}
+.fleet-type-container {
+    position: relative;
+}
+.rcrft-type-img {
+    vertical-align: middle;
+}
+.charter-type {
+    width: 92%;
+} 
+.jet-type {
+    width: 76%;
+}
+.fleet-item small.info-legend {
+    display: block;
+    font-size: 7pt;
+    font-weight: 400;
+}
+
+/* PHOTO ON HOVER */
+.fleet-img-pop {
+    position: absolute;
+    bottom: 100%;
+    background-color: #8791BF;
+    padding: .4rem .4rem 0 .4rem;
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    border-radius: .1rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .6s;
+}
+.fleet-img-pop .arrow {
+    width:0; 
+    height:0;
+    border:10px solid transparent;
+    border-bottom:none;
+    border-top:10px solid #8791BF;
+    position:absolute;
+    bottom:-7px;
+    left:30%;
+}
+.fleet-img-pop img {
+    width: 15rem;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: .2s;
+}
+.fleet-img-pop i.material-icons {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    color: #fff;
+    font-size: 35pt;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .5s;
+    transition-delay: .2s;
+    
+}
+.fleet-type-container:hover .fleet-img-pop {
+    visibility: visible;
+    opacity: 1;
+}
+.fleet-img-pop:hover img {
+    opacity:.4;
+}
+.fleet-img-pop img:hover ~ i.material-icons,
+.fleet-img-pop i.material-icons:hover {
+    opacity: .8;
+}
+/* END photo on hover */
+
+/*** FILTER FORM ***/
+#fleet-filter-form {
+    height: 0;
+    overflow: hidden;
+    
+    background: rgba(195,198,216, .5);
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    border: 1px solid #c3c6d8;
+    transition: all .3s;
+    transition-delay: .1s;
+}#fleet-filter-form .input-field{
+    opacity: 0;
+    transition: opacity .3s;
+    transition-delay: .2s;
+}
+#fleet-filter-form.visible {
+    min-height: 5rem;
+    overflow: visible;
+}
+#fleet-filter-form.visible .input-field {
+    opacity: 1;
+}
+.filter-btn {
+    padding-left: 0 !important;
+}
+.filter-btn h4 {
+    font-weight: 500;
+    margin-bottom: .3rem;
+    padding-left: 0 !important;
+}
+.filter-btn h4 span {
+    cursor: pointer;
+}
+.filter-btn h4 i.material-icons {
+    font-size: 17pt;
+    vertical-align: middle;
+}
+#fleet-filter-form .input-field.fleet-type-form-cont {
+    margin-top: 0;
+}
+#fleet-filter-form input[type=checkbox] + label {
+    display: block;
+    color: #222;
+    font-weight: 500;
+}
+[type=checkbox]:checked + label:before {
+    border-right: .3rem solid #47559D;
+    border-bottom: .3rem solid #47559D;
+}
+#fleet-filter-form i.material-icons {
+    vertical-align: middle;
+}
+#fleet-filter-form .select-dropdown li img {
+    height: 26px;
+    width: 26px;
+    margin: 13px 15px;
+}
+/*** END filter form ***/
+/********  END fleet list  *********/
+/********************** AIRCRAFT_DETAILS ********************/
+.aircraft_h1 {
+    font-size:30pt;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.aircraft_h2 {
+    margin-top:0;
+}
+.flagpro {
+    margin-top: 0.27rem !important;
+    margin-left:0.3rem;
+}
+.bloc-photo {
+    padding:1rem;
+    
+}
+/*.plan-aircraft {
+    -ms-transform: rotate(90deg); 
+    -webkit-transform: rotate(90deg); 
+    transform: rotate(90deg);
+    vertical-align: top;
+    height:100%;
+}*/

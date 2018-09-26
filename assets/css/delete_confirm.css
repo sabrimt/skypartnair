@@ -1,0 +1,48 @@
+/*
+****************************************************
+**********   CONFIRM DELETE DIALOG BOX   ***********
+****************************************************
+*/
+
+.cd-popup {
+    z-index: 30;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s 0s, visibility 0s 0.4s;
+}
+
+.cd-popup.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s 0s, visibility 0s 0s;
+}
+
+.cd-popup-container {
+    transform: translateY(-60px);
+    transition-property: transform;
+    transition-duration: 0.4s;
+}
+
+.is-visible .cd-popup-container {
+    transform: translateY(0);
+}
+
+#del-confirm-btn:hover, #del-confirm-btn:focus {
+    background-color: #E1A7A1;
+}
+.action-btn{
+    position: absolute;
+    padding-left: 0.5rem;
+    
+}
+.btn-display{
+    display: none;
+}
+.confirm-delete-btn, .edit-btn {
+    display: block;
+    font-size: 1.8rem;
+}
+.edit-btn {
+    margin-bottom: 0.4rem;
+    margin-top: -1rem;
+}

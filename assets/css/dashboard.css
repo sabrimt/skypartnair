@@ -1,0 +1,306 @@
+/*|||||||||||||||||||||||||||||||||||||*/
+/*          DASHBOARD STYLE            */
+/*|||||||||||||||||||||||||||||||||||||*/
+
+/*########   CUSTOM CLASSES   ########*/
+
+/*#####################################*/
+
+/************ SIDE NAVBAR ************/
+/* CONTENT PUSH FOR SIDE NAVBAR */
+main, footer {
+    padding-left: 20rem;
+}
+#main-content{
+    padding-top: 2rem;
+}
+
+.dash-menu-li-up {
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+}
+.adashdown {
+    line-height: 88px !important;
+    height: 88px !important;    
+}
+.dashdivi {
+    margin-top:0 !important;
+}
+.dashtitle {
+    margin-top:3rem;
+    margin-bottom:5rem;
+}
+.dashmenu {
+    width: 280px;
+    height:130px;
+    overflow: hidden;
+/*    box-shadow: 5px 5px 5px #111;*/
+}
+.dashmenu img{
+    transition: 2s;
+    max-width: 100%;
+    opacity: 0.4;
+}
+.dashmenu img:hover{
+    transform:scale(1.08);
+}
+.photo-dash{
+    transition: opacity .4s;
+}
+.photo-dash:hover {
+    opacity: .1;
+}
+.logodashmob {
+    display:none;
+}
+#slide-out{
+    top: 3.85rem;
+}
+@media only screen and (max-width : 1092px) {
+    .logodashfull {
+        display:none;
+    }
+    .logodashmob {
+        display:inline;
+    }
+    .logomiddash {
+        display:none;
+    }
+}
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+    #slide-out {
+        top: 4.1rem;
+    }
+}
+/* LOGO */
+.logo-admin{
+    max-height: 3rem;
+    margin-top:0.5rem;
+    padding-left: 1.3rem;
+
+}
+/********** END SIDE NAVBAR ************/
+
+/*
+==================================================================
+============   CUSTOM :: MATERIALIZE   =================
+*/
+/*--------------------------------------
+    FORMS style
+---------------------------------------*/
+/* label color */
+.input-field label 
+{
+    color: #444;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=password]:focus + label,
+.input-field input[type=checkbox]:focus + label,
+.input-field input[type=number]:focus + label
+{
+    color: #000;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=password]:focus,
+.input-field input[type=checkbox]:focus,
+.input-field input[type=number]:focus
+{
+    border-bottom: 1px solid #333;
+    box-shadow: 0 1px 0 0 #555;
+}
+
+/* valid color */
+.input-field input[type=text].valid,
+.input-field input[type=password].valid,
+.input-field input[type=checkbox].valid,
+.input-field input[type=number].valid 
+{
+    border-bottom: 1px solid #7cb342;
+    box-shadow: 0 1px 0 0 #7cb342;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid,
+.input-field input[type=password].invalid,
+.input-field input[type=checkbox].invalid,
+.input-field input[type=number].invalid 
+{
+    border-bottom: 1px solid firebrick;
+    box-shadow: 0 1px 0 0 lightsalmon;
+}
+
+/* Switch checkbox */
+.switch label input[type=checkbox]:checked + .lever {
+    background-color: #9B3532;
+}
+.switch label input[type=checkbox]:checked + .lever:after {
+    background-color: #9B3532;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active 
+{
+    color: #222;
+}
+
+/* Dropdown select */
+.dropdown-content li > a,
+.dropdown-content li > span 
+{
+    color: #000;
+}
+.dropdown-content li:hover {
+    background-color: rgba(93, 6, 10, 0.07);
+}
+
+
+/*---------------------------------------*/
+/*  Date picker style
+-----------------------------------------*/
+/* picker width */
+.picker__box {
+    width:110%;
+}
+/*Bande du haut affichan le jour de la semaine*/
+.picker__weekday-display {
+    background-color: firebrick;
+}
+/*Block du haut affichant la date choisie*/
+.picker__date-display{
+    background-color: #222;
+}
+
+/*Pastille du jour selectionné*/
+.picker__day--selected,
+.picker__day--selected:hover,
+.picker--focused .picker__day--selected 
+{
+    background-color: firebrick;
+}
+/*Date du jour (couleur différente)*/
+.picker__day.picker__day--today {
+    color: firebrick;
+}
+/*boutons precedent/suivant choix du mois*/
+.picker__nav--prev:hover, .picker__nav--next:hover {
+    cursor: pointer;
+    color: #000;
+    background: #a1ded8;
+}
+
+/*Boutons du bas*/
+.btn-flat {
+    color: #222;
+}
+.picker__close, .picker__today {
+    color: firebrick;
+}
+
+button.picker__today:focus,
+button.picker__clear:focus,
+button.picker__close:focus {
+    background-color: #FFCDD2;
+}
+/*=============  END Materialize ==================
+==================================================*/
+
+body {
+    background-color: #fbfbf3;
+}
+
+
+/* Back forms */
+/** betwin buttons **/
+.btn.marg {
+    margin-right: 1rem; 
+}
+.cancel-btn {
+    margin-right: 2rem;
+    border: 0.1rem solid #666;
+}
+.backdrop {
+    background-color: #777;
+}
+
+/** OPTION FORMS **/
+.options-form {
+    height: 15rem;
+}
+/** option forms **/
+
+/** fleet list image **/
+.fleet-preview-img {
+    max-height: 2.4rem;
+}
+
+/** INFOS MODAL **/
+.h2_modal-details{
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 0.1rem solid #222;
+}
+.pictures_modal{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.description-infos h4, .type-infos h4, .crew-infos h4, .title-infos h4, .content-infos h4, .category-infos h4 {
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #bbb;
+}
+.modal-trigger .material-icons {
+    font-size: 1.3rem;
+}
+/** infos modal **/
+
+/** PAGINATION **/
+.pagination-full {
+    margin: 0 auto;
+}
+.pagination a {
+    margin: 1rem;
+    font-weight: 500;
+}
+.pagination {
+    display: flex;
+    margin-top: 1rem;
+    padding-top: 0.7rem;
+    border-top: 0.1rem solid #bbb;
+}
+.pagination-current {
+    display: inline-block;
+    width: 1.5rem;
+    margin: 0.5rem;
+}
+/** pagination **/
+
+/** USER ROLE CHANGE **/
+.check-submit .material-icons {
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+.check-submit {
+    position: absolute;
+    opacity: 0;
+    right: 22px;
+    top: 22px;
+    
+    height: 0;
+    width: 0;
+    -webkit-transition: width .2s, height .2s, top .2s right .2s, opacity .1s; /* For Safari 3.1 to 6.0 */
+    transition: width .2s, height .2s, top .2s, right .2s, opacity .1s;
+}
+.modified {
+    right: 2px;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+}
+/** END user role change **/

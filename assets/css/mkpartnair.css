@@ -1,0 +1,27 @@
+
+/* 
+    Created on : 30 juin 2017, 16:01:15
+    Author     : Pierre-Antoine
+*/
+
+/* PUSHPIN */ 
+/* Class for when element is above threshold */
+  .pin-top {
+    position: relative;
+  }
+
+  /* Class for when element is below threshold */
+  .pin-bottom {
+    position: relative;
+  }
+
+  /* Class for when element is pinned */
+  .pinned {
+    position: fixed !important;
+  }
+  html, body, .block {
+    height: 100%;
+  }
+  nav ul li a:hover, nav ul li a.active {
+    background-color: rgba(0,0,0,.1);
+  }

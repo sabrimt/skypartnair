@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/models/Fleet_model.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/assets/css/dashboard.css</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/themes/dashboard.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/views/fleetajax.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/assets/js/fleet.js</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/views/fleet.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/assets/js/pickadate.js</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/assets/js/init.js</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/helpers/convert_helper.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/controllers/Site.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/views/email/flashmail.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/views/admin/flash_sales.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/controllers/Flash.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/controllers/Fleet.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/views/email/freequotemail.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/views/group.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/helpers/assets_helper.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/views/ciajaxpagination.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/controllers/Blog.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/config/form_validation.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/assets/js/blog.js</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/controllers/Group.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/assets/js/delete_confirm.js</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/themes/default.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/assets/css/blog.css</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/language/english/privatejet_lang.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/views/index.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/models/Flash_model.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/config/email.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/views/freequote.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/assets/css/freequote.css</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/assets/js/freequote.js</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/language/french/privatejet_lang.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/assets/css/style.css</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/assets/css/fleet.css</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/views/blog.php</file>
+            <file>file:/C:/xampp/htdocs/mkpartnairv1/application/controllers/Privatejet.php</file>
+        </group>
+    </open-files>
+</project-private>
