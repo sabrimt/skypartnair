@@ -1,0 +1,8 @@
+/nbproject/*
+/system/*
+
+/nbproject/
+/assets/img/
+/application/config/email\.php
+\.editorconfig
+.editorconfig
