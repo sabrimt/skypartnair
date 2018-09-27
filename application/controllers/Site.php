@@ -4,20 +4,22 @@ defined ('BASEPATH') OR exit('No_direct_script_access_allowed');
 
 class Site extends CI_Controller {
     
-	public function __construct()
+		public function __construct()
     {
         parent::__construct();
 				$this->lang->load("home_lang", $this->config->item('language'));
 				$this->load->model('Article_model', 'artMgr');
     }
 	
-    public function index () {
+		public function index()
+		{
 				$data = array();
         $this->layout->setTitle("SKY PARTNAIR – Location jet privé, location avion de ligne, avion privé, vol charter. Affrètement d'avion ");
 
         $this->layout->addJs("pickadate");
 
 				$this->layout->addCss('blog');
+				$this->layout->addCss('animation');
 				//		$this->layout->addCss('onepage-scroll');
 				//		$this->layout->addCss('onepage-scroll2');
 				$this->layout->addJs('animation');

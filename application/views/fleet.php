@@ -132,7 +132,7 @@ $type_lg = 'type_'.$lng;
                 </div>
 				<div class="col s3 fleet-type-container center">
 					<?= img($aircraft->photo_bonus, $aircraft->type->$type_lg, "center rcrft-type-img$type_class") ?>
-					<div class="fleet-img-pop hoverable" onclick="document.location='<?= base_url("fleet/showAircraft/$aircraft->id") ?>'">
+					<div class="fleet-img-pop hoverable" onclick="document.location='<?= base_url('fleet/showAircraft/$aircraft->id') ?>'">
 						<span class="arrow"></span>
 						<?= img($aircraft->photo_exter, '', "") ?>
 						<i class="material-icons">&#xE8B6;</i>

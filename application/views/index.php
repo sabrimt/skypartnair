@@ -136,12 +136,13 @@ $content='content_' . $lng;?>
 <!-- CONTENU GENERAL -->
 
 <!-- PREMIER BLOC -->
-<div class="container "> 
+<div id="index-banner1" class="container"> 
     <div class="section ">
 		<h1 class="center-align"><?= t('home_lang_h1_bloc1') ?></h1>
 		<h2 class="center-align"><?= t('home_lang_h2_bloc1') ?></h2>
 		<div class="row roparal" style="display: flex; align-items: stretch;">
-			<div class="info-block hoverable move-animable col s12 m4" onclick="document.location='<?= base_url('privatejet') ?>'">
+			
+			<div class="info-block hoverable left-slide-anim col s12 m4" onclick="document.location='<?= base_url('privatejet') ?>'">
 				<div class="icon-block">
 					<div class="hover-calc">
 						<h4 class="center"><?= t('home_lang_btn_bloc1') ?></h4>
@@ -151,7 +152,8 @@ $content='content_' . $lng;?>
 				<h3 class="center"><strong><?= t('home_lang_h3_bloc1_1') ?></strong></h3>
 				<p class="light"><?= t('home_lang_p_bloc1_1') ?></p>
 			</div>
-			<div class="info-block hoverable col s12 m4" onclick="document.location='<?= base_url('group') ?>'">
+
+			<div class="info-block hoverable left-slide-anim col s12 m4" onclick="document.location='<?= base_url('group') ?>'">
 				<div class="icon-block">
 					<div class="hover-calc">
 						<h4 class="center"><?= t('home_lang_btn_bloc1') ?></h4>
@@ -162,7 +164,7 @@ $content='content_' . $lng;?>
 				<p class="light"><?= t('home_lang_p_bloc1_2') ?></p>
 			</div>
 
-			<div class="info-block hoverable col s12 m4" onclick="document.location='<?= base_url('group') ?>'">
+			<div class="info-block hoverable left-slide-anim col s12 m4" onclick="document.location='<?= base_url('group') ?>'">
 				<div class="icon-block">
 					<div class="hover-calc">
 						<h4 class="center"><?= t('home_lang_btn_bloc1') ?></h4>
@@ -172,6 +174,7 @@ $content='content_' . $lng;?>
 				<h3 class="center"><strong><?= t('home_lang_h3_bloc1_3') ?></strong></h3>
 				<p class="light"><?= t('home_lang_p_bloc1_3') ?></p>
 			</div>
+
 		</div>
     </div>
 </div>
@@ -188,6 +191,7 @@ $content='content_' . $lng;?>
 				<p class><?= t('home_lang_p_bloc2') ?></p>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="col s6 m3">
 			  <div class="icon-block">
@@ -210,6 +214,7 @@ $content='content_' . $lng;?>
 				<h4 class="center"><?= t('home_lang_content3_bloc2') ?></h4>
 			  </div>
 			</div>
+
 			<div class="col s6 m3">
 			  <div class="icon-block">
 				<h2 class="center brown-text"><i class="material-icons icon-pqmk red-text text-darken-5">&#xE1DB;</i></h2>
@@ -228,26 +233,26 @@ $content='content_' . $lng;?>
 
     <div class="section no-pad-bot">
         <div class="container">
-					   <div class="row">
-						   <div class="col s12 center-align animationjs">
-							   <div class="col l3 s6 blue-text text-darken-6">
-								   <span class="count" data-anim-num="7000">0</span>
-								   <p class="txt-js"><?= t('home_lang_bloc3_count1') ?></p>
-							   </div>
-							   <div class="col l3 s6 blue-text text-darken-6">
-								   <span class="count" data-anim-num="10">100</span> 
-									<p class="txt-js"><?= t('home_lang_bloc3_count2') ?></p>
-							   </div>
-							   <div class="col l3 s6 blue-text text-darken-6">
-								   <span class="count" data-anim-num="96">0</span>
-									<p class="txt-js"><?= t('home_lang_bloc3_count3') ?></p>
-							   </div>
-							   <div class="col l3 s6 blue-text text-darken-6">
-								   <span class="count" data-anim-num="2">100</span>
-									<p class="txt-js"><?= t('home_lang_bloc3_count4') ?></p>
-							   </div>
-						   </div>
-					   </div>
+			<div class="row">
+				<div class="col s12 center-align animationjs">
+					<div class="col l3 s6 blue-text text-darken-6">
+						<span class="count" data-anim-num="7000">0</span>
+						<p class="txt-js"><?= t('home_lang_bloc3_count1') ?></p>
+					</div>
+					<div class="col l3 s6 blue-text text-darken-6">
+						<span class="count" data-anim-num="10">100</span> 
+						<p class="txt-js"><?= t('home_lang_bloc3_count2') ?></p>
+					</div>
+					<div class="col l3 s6 blue-text text-darken-6">
+						<span class="count" data-anim-num="96">0</span>
+						<p class="txt-js"><?= t('home_lang_bloc3_count3') ?></p>
+					</div>
+					<div class="col l3 s6 blue-text text-darken-6">
+						<span class="count" data-anim-num="2">100</span>
+						<p class="txt-js"><?= t('home_lang_bloc3_count4') ?></p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	 <div class="parallax">
@@ -303,7 +308,7 @@ $content='content_' . $lng;?>
 
 
 <!-- ************ BLOC BLOG ************* -->
-<div class="bloc-blog grey lighten-3">
+<div id="blog-section" class="bloc-blog grey lighten-3">
 	<div class="container">
 		<div class="section" >
 			<h1 class="center-align"><?= t('home_lang_bloc5_h1') ?></h1>
@@ -314,7 +319,7 @@ $content='content_' . $lng;?>
 				foreach ($articles as $articl):
 				?>
 
-				<div class="col s12 m6 l4 article_item">
+				<div class="col s12 m6 l4 article_item left-slide-anim">
 					<div class="card hoverable">
 						<div class="card-image tile">
 							<?= img($articl->picture_1, 'affretement jet privé', "photoblog" )?>
