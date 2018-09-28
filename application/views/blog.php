@@ -90,12 +90,12 @@ $content='content_' . $lng;?>
 				endforeach; ?>
 			</div>
 
-			<div class="row last-atc-1" style="margin-bottom:0; position: relative;">
-				<h3 class="red-text text-darken-5">DERNIERS ARTICLES </h3>
+			<div class="row last-atc-1 animated-title animated-blocks" style="margin-bottom:0; position: relative;">
+				<h3 class="red-text text-darken-5 left-slide-anim show-slide-anim">DERNIERS ARTICLES </h3>
 				<?php
 				foreach ($articles as $article):
 				?>
-				<div class="col s12 m6 l4 article_item">
+				<div class="col s12 m6 l4 article_item left-slide-anim show-slide-anim">
 						<div class="card hoverable">
 							<div class="card-image tile">
 								<?= img($article->picture_1, 'affretement jet privé', "photoblog" )?>

@@ -1,18 +1,54 @@
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 
 .left-slide-anim {
-  transform: translateX(400%);
-  visibility: hidden;
+  transform: translateX(100%);
+  opacity: 0;
+  
+  -webkit-transition: none; 
+  -moz-transition: none; 
+  -o-transition: none; 
+  transition: none;
+}
 
-  -webkit-transition: all 1s cubic-bezier(0.165, 0.840, 0.440, 1.000); 
-  -moz-transition: all 1s cubic-bezier(0.165, 0.840, 0.440, 1.000); 
-  -o-transition: all 1s cubic-bezier(0.165, 0.840, 0.440, 1.000); 
-  transition: all 1s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+.right-slide-anim {
+  transform: translateX(-100%);
+  opacity: 0;
+  
+  -webkit-transition: none; 
+  -moz-transition: none; 
+  -o-transition: none; 
+  transition: none;
+}
+
+.top-slide-anim {
+  transform: translateY(150%);
+  opacity: 0;
+  
+  -webkit-transition: none; 
+  -moz-transition: none; 
+  -o-transition: none; 
+  transition: none;
+}
+
+.bottom-slide-anim {
+  transform: translateY(-150%);
+  opacity: 0;
+  
+  -webkit-transition: none; 
+  -moz-transition: none; 
+  -o-transition: none; 
+  transition: none;
 }
 
 .show-slide-anim {
   transform: translateX(0);
-  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
+
+  -webkit-transition: transform .8s cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity 1s ease-out; 
+  -moz-transition: transform .8s cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity 1s ease-out; 
+  -o-transition: transform .8s cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity 1s ease-out; 
+  transition: transform .8s cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity 1s ease-out;
 }

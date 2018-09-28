@@ -3,9 +3,9 @@ $lng = $this->lang->lang();
 $title='title_' . $lng; 
 $category='category_' . $lng;
 $description='description_' . $lng;
-$content='content_' . $lng;?>
+$content='content_' . $lng;
+?>
     
-
 <!-- PREMIER PARALLAX AVEC FORMULAIRE -->
 
 <div id="index-banner" class="parallax-container">
@@ -136,13 +136,13 @@ $content='content_' . $lng;?>
 <!-- CONTENU GENERAL -->
 
 <!-- PREMIER BLOC -->
-<div id="index-banner1" class="container"> 
+<div id="index-banner1" class="container animated-title animated-blocks"> 
     <div class="section ">
-		<h1 class="center-align"><?= t('home_lang_h1_bloc1') ?></h1>
-		<h2 class="center-align"><?= t('home_lang_h2_bloc1') ?></h2>
+		<h1 class="center-align top-slide-anim show-slide-anim"><?= t('home_lang_h1_bloc1') ?></h1>
+		<h2 class="center-align top-slide-anim show-slide-anim"><?= t('home_lang_h2_bloc1') ?></h2>
 		<div class="row roparal" style="display: flex; align-items: stretch;">
 			
-			<div class="info-block hoverable left-slide-anim col s12 m4" onclick="document.location='<?= base_url('privatejet') ?>'">
+			<div class="info-block hoverable left-slide-anim show-slide-anim col s12 m4" onclick="document.location='<?= base_url('privatejet') ?>'">
 				<div class="icon-block">
 					<div class="hover-calc">
 						<h4 class="center"><?= t('home_lang_btn_bloc1') ?></h4>
@@ -153,7 +153,7 @@ $content='content_' . $lng;?>
 				<p class="light"><?= t('home_lang_p_bloc1_1') ?></p>
 			</div>
 
-			<div class="info-block hoverable left-slide-anim col s12 m4" onclick="document.location='<?= base_url('group') ?>'">
+			<div class="info-block hoverable left-slide-anim show-slide-anim col s12 m4" onclick="document.location='<?= base_url('group') ?>'">
 				<div class="icon-block">
 					<div class="hover-calc">
 						<h4 class="center"><?= t('home_lang_btn_bloc1') ?></h4>
@@ -164,7 +164,7 @@ $content='content_' . $lng;?>
 				<p class="light"><?= t('home_lang_p_bloc1_2') ?></p>
 			</div>
 
-			<div class="info-block hoverable left-slide-anim col s12 m4" onclick="document.location='<?= base_url('group') ?>'">
+			<div class="info-block hoverable left-slide-anim show-slide-anim col s12 m4" onclick="document.location='<?= base_url('group') ?>'">
 				<div class="icon-block">
 					<div class="hover-calc">
 						<h4 class="center"><?= t('home_lang_btn_bloc1') ?></h4>
@@ -184,23 +184,23 @@ $content='content_' . $lng;?>
 
 <!-- DEUXIEME BLOC -->
 <div>
-	<div class="container " style="padding-bottom:4rem;;">
+	<div class="container animated-title animated-blocks" style="padding-bottom:4rem;;">
 		<div class="row">
 			<div class="center-align col s8 offset-s2">
-				<h1 class=""><?= t('home_lang_h1_bloc2') ?></h1>
-				<p class><?= t('home_lang_p_bloc2') ?></p>
+				<h1 class="top-slide-anim show-slide-anim"><?= t('home_lang_h1_bloc2') ?></h1>
+				<p class="top-slide-anim show-slide-anim"><?= t('home_lang_p_bloc2') ?></p>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col s6 m3">
+			<div class="col s6 m3 left-slide-anim show-slide-anim">
 			  <div class="icon-block">
 				<h2 class="center brown-text"><i class="material-icons icon-pqmk red-text text-darken-5">&#xE80B;</i></h2>
 				<h4 class="center"><?= t('home_lang_content1_bloc2') ?></h4>
 			  </div>
 			</div>
 
-			<div class="col s6 m3">
+			<div class="col s6 m3 left-slide-anim show-slide-anim">
 			  <div class="icon-block">
 				<h2 class="center brown-text"><i class="material-icons icon-pqmk red-text text-darken-5">&#xE8DC;</i></h2>
 				<h4 class="center"><?= t('home_lang_content2_bloc2') ?></h4>
@@ -208,14 +208,14 @@ $content='content_' . $lng;?>
 			  </div>
 			</div>
 
-			<div class="col s6 m3">
+			<div class="col s6 m3 left-slide-anim show-slide-anim">
 			  <div class="icon-block">
 				<h2 class="center brown-text"><i class="material-icons icon-pqmk red-text text-darken-5">settings</i></h2>
 				<h4 class="center"><?= t('home_lang_content3_bloc2') ?></h4>
 			  </div>
 			</div>
 
-			<div class="col s6 m3">
+			<div class="col s6 m3 left-slide-anim show-slide-anim">
 			  <div class="icon-block">
 				<h2 class="center brown-text"><i class="material-icons icon-pqmk red-text text-darken-5">&#xE1DB;</i></h2>
 				<h4 class="center"><?= t('home_lang_content4_bloc2') ?></h4>
@@ -265,16 +265,16 @@ $content='content_' . $lng;?>
 
 
 <!-- QUATRIEME BLOC -->
-<div id="index-banner3" class="parallax-container hide-on-med-and-down">
+<div id="index-banner3" class="parallax-container hide-on-med-and-down animated-title animated-blocks">
 	<div class="section no-pad-bot">
 		<div class="container">
 
-			<div class="row center red-text text-darken-5" style=" background-color: rgba(254, 254, 254, 0.6); padding: 10px;">
+			<div class="row center red-text text-darken-5 top-slide-anim show-slide-anim" style=" background-color: rgba(254, 254, 254, 0.6); padding: 10px;">
 				<h1><?= t('home_lang_bloc4_h1') ?></h1>
 				<h2><?= t('home_lang_bloc4_p') ?></h2>
 			</div>
 			<div class="row roparal" style="margin-top:1rem;">
-				<div class="col s12 m6 picto-link" onclick="document.location='<?= base_url('fleet/privatejet') ?>'">
+				<div class="col s12 m6 picto-link left-slide-anim show-slide-anim" onclick="document.location='<?= base_url('fleet/privatejet') ?>'">
 					<div class="picto-link-header" style="left:0;">
 						<?= img('picto-jet-prive.png', 'location jet privé', 'photo-plus-petite jet responsive-img center' )?>
 						<h3 class="center red-text text-darken-5"><strong><?= t('home_lang_bloc4_jet_title') ?></strong></h3>
@@ -285,7 +285,7 @@ $content='content_' . $lng;?>
 						</div>
 					</div>
 				</div>
-				<div class="col s12 m6 picto-link" onclick="document.location='<?= base_url('fleet/charter') ?>'">
+				<div class="col s12 m6 picto-link left-slide-anim show-slide-anim" onclick="document.location='<?= base_url('fleet/charter') ?>'">
 					<div class="picto-link-header" style="right:0;">
 						<?= img('picto-avion-ligne.png', 'affretement vol groupe', 'photo-petite responsive-img center' )?>
 						<h3 class="center red-text text-darken-5"><strong><?= t('home_lang_bloc4_airliner_title') ?></strong></h3>
@@ -308,18 +308,18 @@ $content='content_' . $lng;?>
 
 
 <!-- ************ BLOC BLOG ************* -->
-<div id="blog-section" class="bloc-blog grey lighten-3">
+<div id="blog-section" class="bloc-blog grey lighten-3 animated-title animated-blocks">
 	<div class="container">
 		<div class="section" >
-			<h1 class="center-align"><?= t('home_lang_bloc5_h1') ?></h1>
-			<h2 class="center-align"><?= t('home_lang_bloc5_p') ?></h2>
+			<h1 class="center-align top-slide-anim show-slide-anim"><?= t('home_lang_bloc5_h1') ?></h1>
+			<h2 class="center-align top-slide-anim show-slide-anim"><?= t('home_lang_bloc5_p') ?></h2>
 			<div class="row roparal">
-				<h2 class="center-align"><a href="<?= base_url("blog") ?>" class="btn-large white z-depth-4 red-text text-darken-5 waves-effect"><?= t('home_lang_bloc5_blog_btn') ?></a></h2>
+				<h2 class="center-align top-slide-anim show-slide-anim"><a href="<?= base_url("blog") ?>" class="btn-large white z-depth-4 red-text text-darken-5 waves-effect"><?= t('home_lang_bloc5_blog_btn') ?></a></h2>
 				<?php
 				foreach ($articles as $articl):
-				?>
+					?>
 
-				<div class="col s12 m6 l4 article_item left-slide-anim">
+				<div class="col s12 m6 l4 article_item left-slide-anim show-slide-anim">
 					<div class="card hoverable">
 						<div class="card-image tile">
 							<?= img($articl->picture_1, 'affretement jet privé', "photoblog" )?>
@@ -344,31 +344,31 @@ $content='content_' . $lng;?>
 
 
 <!-- BLOC THEY TRUST US -->
-<div class="partners grey lighten-2"  style="padding-top:5rem; padding-bottom: 3rem; margin-bottom: 0;">
+<div class="partners grey lighten-2 animated-title animated-blocks" style="padding-top:5rem; padding-bottom: 3rem; margin-bottom: 0;">
     <div class="container">
 		<div class="row">
 		   		
-			<h1 class="center-align"><?= t('home_lang_bloc6_h1') ?></h1>
+			<h1 class="center-align top-slide-anim show-slide-anim"><?= t('home_lang_bloc6_h1') ?></h1>
 			<div class="col l12 s12 logo-partners center-align" style="margin-top:4rem; margin-bottom: 3rem;">
-				<div class="log-part col s2">
+				<div class="log-part col s2 bottom-slide-anim show-slide-anim">
 					<?= img('/partners/avinode_logo_140.png', 'partner mkpartnair', "photo-petite height-limit" )?> 
 				</div>
-				<div class="log-part col s2">
+				<div class="log-part col s2 bottom-slide-anim show-slide-anim">
 					<?= img('/partners/logo_aeroports_de_paris1.gif', 'partner mkpartnair', "photo-petite height-limit" )?> 
 				</div>
 
-				<div class="log-part col s2">
+				<div class="log-part col s2 bottom-slide-anim show-slide-anim">
 					<?= img('/partners/Wyvern.png', 'partner mkpartnair', "photo-petite height-limit" )?>
 				</div>
-				<div class="log-part col s2">
+				<div class="log-part col s2 bottom-slide-anim show-slide-anim">
 					<?= img('/partners/nouveau-logo-seine-saint-denis.jpg', 'partner mkpartnair', "photo-petite height-limit" )?>
 				</div>
 
-				<div class="log-part col s2">
+				<div class="log-part col s2 bottom-slide-anim show-slide-anim">
 					<?= img('/partners/michelin.png', 'partner mkpartnair', "photo-petite height-limit" )?>
 				</div>
 
-				<div class="log-part col s2">
+				<div class="log-part col s2 bottom-slide-anim show-slide-anim">
 					<?= img('/partners/psa.jpg', 'partner mkpartnair', "photo-petite height-limit" )?>
 				</div>
 	   		</div>

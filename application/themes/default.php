@@ -194,6 +194,17 @@
 
 <!--  Scripts -->
 
+
+<script>
+    window.onload = function() {
+        var hiddenElts = document.querySelectorAll('.left-slide-anim.show-slide-anim, .right-slide-anim.show-slide-anim, .top-slide-anim.show-slide-anim, .bottom-slide-anim.show-slide-anim');
+        
+        for (var i = 0, len = hiddenElts.length; i < len; i++) {
+            hiddenElts[i].classList.remove('show-slide-anim');
+        }
+    }
+</script>
+
 <script src="https://code.jquery.com/jquery-3.1.1.js"
         integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
         crossorigin="anonymous">
