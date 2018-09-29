@@ -90,12 +90,12 @@ $content='content_' . $lng;?>
 				endforeach; ?>
 			</div>
 
-			<div class="row last-atc-1 animated-title animated-blocks" style="margin-bottom:0; position: relative;">
+			<div class="row last-atc-1 animated-title" style="margin-bottom:0; position: relative;">
 				<h3 class="red-text text-darken-5 left-slide-anim show-slide-anim">DERNIERS ARTICLES </h3>
 				<?php
 				foreach ($articles as $article):
 				?>
-				<div class="col s12 m6 l4 article_item left-slide-anim show-slide-anim">
+				<div class="col s12 m6 l4 article_item">
 						<div class="card hoverable">
 							<div class="card-image tile">
 								<?= img($article->picture_1, 'affretement jet privé', "photoblog" )?>
@@ -112,8 +112,8 @@ $content='content_' . $lng;?>
 				endforeach; ?>
 			</div>
 
-			<div class="" style="margin-top:2rem;">
-				<h3 class="col s12 red-text text-darken-5">LIRE AUSSI, TOUS LES ARTICLES </h3>
+			<div class="animated-title animated-blocks" style="margin-top:2rem;">
+				<h3 class="col s12 red-text text-darken-5 left-slide-anim show-slide-anim">LIRE AUSSI, TOUS LES ARTICLES </h3>
 				
 				<div class="row" id="ajaxdata">
 				<?php
@@ -146,7 +146,7 @@ $content='content_' . $lng;?>
 		<div class="col s12 l3 center-align">
 			<div class="row" style="margin-top:2rem;">
 				<div class="col s10 offset-s1 hide-on-med-and-down">
-					<div class="card" style="margin-top:-150px;">
+					<div class="card onready-anim right-slide-anim" style="margin-top:-150px;transition-delay: .5s;">
 						<div class="card-image">
 							<?= img('fond_blog.jpg', 'affretement jet privé', "photo-petite responsive-img" )?> 
 							<span class="card-title">Le Blog MK Partnair</span>

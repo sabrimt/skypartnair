@@ -12,7 +12,7 @@ $content='content_' . $lng;
 
     <div class="section no-pad-bot">
         <div class="container">
-            <div class="row rowformul">
+            <div class="row rowformul onready-anim left-slide-anim" style="transition-delay: .5s;">
 				<div class="formulaire col s3" style="position:relative;">
 
 					<!-- FORM VALIDATION -->

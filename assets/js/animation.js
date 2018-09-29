@@ -34,7 +34,7 @@
  * @param {object} parentSections Element/Elements jQuery ou tableau d'élements jQuery: La/Les section conteneur du/des éléments à animer 
  * @param {string} direction La direction de l'animation: Permet de construire les selecters: ".direction-slide-anim" prepare l'element pour l'anim
  */
-var showHiddenElements = function (parentSections, direction = 'left', delay = 300) {
+var showHiddenElements = function(parentSections, direction = 'left', delay = 200) {
     var movableSelector = '.'+direction+'-slide-anim',
         parents = [],
         parentSection;
@@ -76,10 +76,8 @@ var showHiddenElements = function (parentSections, direction = 'left', delay = 3
 };
 
 var $animEltsContainer = $('.animated-blocks'); // Eléments cibles contenant les Elements à montrer en slide
-//var $blogEltsContainer = $('#blog-section'); // Elément cible Blog contenant les élements à montrer en slide
 var $titlesEltsContainer = $('.animated-title'); // Eléments cibles contenant les titres à animer
 
-showHiddenElements($animEltsContainer);
+showHiddenElements($animEltsContainer); // left par defaut
 showHiddenElements($animEltsContainer, 'bottom');
 showHiddenElements($titlesEltsContainer, 'top');
-showHiddenElements($titlesEltsContainer);

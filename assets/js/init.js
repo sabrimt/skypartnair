@@ -14,6 +14,14 @@ $(document).ready(function() {
 
 
 
+    /*** Sliding hidden Elements on ready (e.g Mini-form) ***/
+
+    $('.onready-anim').addClass('show-slide-anim');
+
+    /***** Sliding hidden Elements on ready *****/
+
+
+
     // Effects on scroll
 
     var options = [
@@ -42,6 +50,8 @@ $(document).ready(function() {
 
     $('#mail-form-content textarea').characterCounter();
 
+
+    
     
 
 /****    SMOOTH SCROLL   ****/
@@ -50,23 +60,19 @@ $(document).ready(function() {
 
 // Select all links with hashes
 
-    $(document).ready(function() {
+    $('.js-scrollTo').on('click', function(e) { // Au clic sur un élément
 
-		$('.js-scrollTo').on('click', function(e) { // Au clic sur un élément
+        let page = $(this).attr('href'); // Page cible
 
-			let page = $(this).attr('href'); // Page cible
+        let speed = 1000; // Durée de l'animation (en ms)
 
-			let speed = 1000; // Durée de l'animation (en ms)
+        let easing = 'easeInQuad';
 
-            let easing = 'easeInQuad';
+        $('html, body').animate( { scrollTop: $(page).offset().top - 50}, speed, easing ); // Go
 
-			$('html, body').animate( { scrollTop: $(page).offset().top - 50}, speed, easing ); // Go
+        return false;
 
-			return false;
-
-		});
-
-	});
+    });
 
 /****    END smooth scroll   ****/
 
