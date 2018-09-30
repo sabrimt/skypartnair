@@ -27,7 +27,7 @@ if ( ! function_exists('date_cvt'))
 			} else // French
 			{
 				$joursem = array('Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam');
-				$moislettre = array('', 'Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Jun', 'Jul', 'Aoû', 'Sep', 'Oct', 'Nov', 'Déc');
+				$moislettre = array('', 'Jan', 'Fév', 'Mars', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc');
 
 				$date = date_format( new DateTime($date),'j/n/Y');
 

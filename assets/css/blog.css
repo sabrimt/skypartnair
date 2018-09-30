@@ -371,6 +371,11 @@ body {
     margin: 0 1rem;
 }*/
 
+#ajax-data {
+    height: max-content;
+    transition: all 2s ease-out;
+}
+
 /* PAGE CONTENU ARTICLE */
 .article_content p, .article_content h3 {
     line-height: 1.4rem;

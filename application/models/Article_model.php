@@ -22,6 +22,7 @@ class Article_model extends CI_Model {
         $this->load->model('ArticleCategory_model', 'catMgr');
 
 	}
+	
     public function count($param = array())
 	{
 		if(is_array($param) && !empty($param)){
@@ -54,30 +55,21 @@ class Article_model extends CI_Model {
 	 * 
 	 * @return array
 	 */
-    public function articleList(string $order = "article_date desc", $limit = array(), $where = ""):array
+	public function articleList(string $order = "article_date desc",
+								array $limit = array('limit' => 99999, 'start' => 0),
+								array $where = array()) :array
 	{
-		if($where != ""){
-			if(!empty($result = $this->db->where('article_category_id', $where)->order_by("article_date desc")->limit($limit['limit'], $limit['start'])->get($this->table)->result()))
+		$this->db->where($where);
+
+		if(!empty($result = $this->db->order_by($order)->limit($limit['limit'], $limit['start'])->get($this->table)->result()))
+		{
+			foreach ($result as $row)
 			{
-				foreach ($result as $row)
-				{
-					$row->category = $this->catMgr->getCategory($row->article_category_id);
-				}
-			}
-		} else {
-			if(!empty($result = $this->db->order_by($order)->limit($limit['limit'], $limit['start'])->get($this->table)->result()))
-			{
-				foreach ($result as $row)
-				{
-					$row->category = $this->catMgr->getCategory($row->article_category_id);
-				}
+				$row->category = $this->catMgr->getCategory($row->article_category_id);
 			}
 		}
+		
         return $result;
-        
-//        return $this->db->order_by('article_date')
-//                ->get($this->table)
-//                ->result();
     }
         
      /**

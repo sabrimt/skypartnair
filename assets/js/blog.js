@@ -21,7 +21,8 @@ $(document).ready(function() {
 		base_url = "http://" + window.location.host + "/";
 		site_url = base_url + lang + '/';
 		
-		applyPagination();
+        applyPagination();
+        
 		function applyPagination() {
             $("#ajax_pagingsearc a").click(function() {
                 // Adding lang segment into url
@@ -31,14 +32,32 @@ $(document).ready(function() {
                 let str2 = hrefUrl.substring(blogPos);
                 let url = str1 + '/' + lang + '/' + str2;
 
+                // Container Infos
+                let $container = $("#ajaxdata"),
+                    contHeight = $container.height(),
+                    contWidth = $container.width(),
+                    loadingDiv = $('<div></div>').css({
+                        width: contWidth + 'px',
+                        height: contHeight +'px',
+                        background: 'url(/skypartnair/assets/img/loading.gif) center center no-repeat',
+                        backgroundSize: '40px'
+                    });
+                
+
+                $container.html(loadingDiv);
+                $container.css({height: contHeight});
+
                 $.ajax({
                     type: "POST",
                     data: "ajax=1",
                     url: url,
                     success: function(msg) {
+                        setTimeout(function() {
 
-                        $("#ajaxdata").hide().html(msg).fadeIn(800);
-                        applyPagination();
+                            $container.hide().html(msg).fadeIn(300);
+                            applyPagination();
+                            
+                        }, 300);
                     }
                 });
                 return false;

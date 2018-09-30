@@ -31,7 +31,7 @@ $content='content_' . $lng;?>
 						<?php
 						$i=0;
 						foreach ($voiraussi as $other):
-						if($article->id != $other->id) {
+						//if($article->id != $other->id) {
 							$i++;
 							
 						?>
@@ -50,7 +50,7 @@ $content='content_' . $lng;?>
 							</div>	
 						</a>
 						<?php
-						}
+						//}
 						if ($i==3)
 						{break;}
 						endforeach; ?>
