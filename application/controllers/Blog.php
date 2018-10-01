@@ -86,7 +86,9 @@ class Blog extends CI_Controller {
 		$config['prev_tag_open'] = '<li class="wave-effects">';
 		$config['prev_tag_close'] = '</li>';
 		$config['prev_link'] = '<i class="material-icons">&#xE5CB;</i>';
+
 		$this->pagination->initialize($config);
+		
 		$page = 10;
 		$data["results"] = $this->artMgr->fetch_article($config["per_page"], $page, $cat);
 
@@ -110,7 +112,8 @@ class Blog extends CI_Controller {
 			$this->load->view('ciajaxpagination',$data);
 		} 
     else {
-			$this->layout->view('blog',$data);
+			$data['view'] = $this->load->view('blog', $data, true);
+			$this->layout->view('blog_template',$data);
 		}
 	}
 
@@ -121,13 +124,20 @@ class Blog extends CI_Controller {
 		$cat=$data['article']->article_category_id;
 		$whereClause = array(
 			'article_category_id' => $cat,
+			'id !=' => $id
 		);
 
-		$data['voiraussi'] = $this->artMgr->articleList("article_date desc", ['limit'=>10, 'start'=>0], $whereClause);
+		$data['voiraussi'] = $this->artMgr->articleList("article_date desc", ['limit'=>3, 'start'=>0], $whereClause);
 		$data['categos'] = $this->catMgr->categoryList();
+
 		$this->layout->addJs('blog');
 		$this->layout->addCss('blog');
-		$this->layout->view('blog_article', $data);
+		$this->layout->addJs('animation');
+		$this->layout->addCss('animation');
+		
+		$data['view'] = $this->load->view('blog_article', $data, true);
+		
+		$this->layout->view('blog_template', $data);
 	 }
 
 	

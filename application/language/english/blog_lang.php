@@ -5,6 +5,7 @@ $lang['blog_lang_main_blog_title']         = "FRONT PAGE";
 
 // Post content
 $lang['blog_lang_post_date']		            = "Posted %s in <strong>%s</strong>";
+$lang['blog_lang_post_date_long']		        = "Posted %s in <strong>%s</strong> category";
 $lang['blog_lang_post_readmore']		        = "Read More";
 $lang['blog_lang_post_learnmore']		        = "Learn More";
 
@@ -20,3 +21,6 @@ $lang['blog_lang_side_category_title']         = "Categories";
 $lang['blog_lang_side_category_all']           = "# All Categories";
 $lang['blog_lang_side_followus']               = "Follow Us";
 $lang['blog_lang_side_instagram']              = "Our Recent Instagram";
+
+// Single Post Page
+$lang['blog_lang_single_same_category_title']  = "ALSO IN %s CATEGORY";

@@ -1,7 +1,6 @@
 
 $(document).ready(function() {
-    // PHOTO ARTICLE
-    $('.materialboxed').materialbox();
+
     // FACEBOOK
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -141,5 +140,16 @@ $(document).ready(function() {
     }
     
     // END blog align
+
+    // BLOG Images
+    var $postImages = $('#single-post img');
+    $postImages.each(function() {
+        $(this).addClass('materialboxed');
+        $(this).attr('width', $(this).width());
+        $(this).css({maxWidth: '', width: ''});
+    });
+
+    $('.materialboxed').materialbox(); // Initialize boxed images
+    // END BLOG Images 
     
 });
