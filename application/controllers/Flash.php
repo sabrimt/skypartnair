@@ -18,15 +18,20 @@ class Flash extends CI_Controller
         $this->load->model('Flash_model', 'fsManager');
 		$this->lang->load("flash_lang", $this->config->item('language'));
 		
-    }
+	}
+	
+
+	
     private function countSales() {
 		 $date = date("Y-m-d"); 
         return (int) $this->fsManager->count($date);
-    }
+	}
+	
     
     public function index() {
         $this->listDisplay();
-    }
+	}
+	
     
     public function listDisplay() {
 		// Current language
@@ -59,7 +64,9 @@ class Flash extends CI_Controller
 			$this->layout->view('flash_sales_front',$data);
 		}
         
-    }
+	}
+	
+
 	private function sendFlashMail() {
 		// Current language
 		$lng = $this->lang->lang();

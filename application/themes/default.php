@@ -129,7 +129,7 @@
         </a>
         <ul class="devalexpand">
             <li class="col s3 waves-effect waves-light"><a class="bottom-links" style="display:flex;" href="<?= site_url("privatejet/freequote") ?>"> <i class="material-icons iconbar">description</i><?= t('default_layout_contact_bar_quotation') ?></a></li>
-            <li class="col s3 waves-effect waves-light"><a class="bottom-links" style="display:flex;" href="tel:+33144840039"> <i class="material-icons iconbar">call</i>+33 1 44 84 00 39</a><li></li>
+            <li class="col s3 waves-effect waves-light"><a class="bottom-links" style="display:flex;" href="tel:+33 1 00 00 00 00"> <i class="material-icons iconbar">call</i>+33 1 00 00 00 00</a><li></li>
             <li class="col s3 waves-effect waves-light"><a class="bottom-links" style="display:flex;" href="mailto:nullepart@mozilla.org"> <i class="material-icons iconbar">email</i>EMAIL</a></li>
             <li class="col s3 waves-effect waves-light"><a class="bottom-links" style="display:flex;" href="https://twitter.com/login" target="_blank"> <?= $twitter ?>FB - T - I</a></li>
         </ul>

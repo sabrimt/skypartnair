@@ -25,11 +25,14 @@ class Flash extends CI_controller
         $this->layout->setTheme('dashboard');
 //        $this->output->enable_profiler(TRUE);
     }
+
+
     
     public function index() {
         $this->listDisplay();
     }
     
+
     public function listDisplay() {
         $data = array();
         $data['nb_sale'] = $this->countSales();
@@ -49,7 +52,8 @@ class Flash extends CI_controller
 		$this->layout->views('delete_confirm');
         $this->layout->view('admin/flash_sales_list', $data);
     }
-	
+    
+    
     public function salesManager($id = null) {
 		
         $this->load->helper('security');
@@ -57,10 +61,18 @@ class Flash extends CI_controller
 		
 		$form_data = array();
         $form_data['fleet_list'] = $this->fleMgr->fleetList();
+
+
+        if($this->input->post()) {
+            // $this->form_validation->set_rules(
+            //     'capacity', 'Capacité', 'callback_match_value['.$this->fleMgr->getAircraft($this->input->post('fleet_id'))->passengers .']'
+            // );
+        }
 		
         if ($this->form_validation->run('flashform') == FALSE)
         {
-			$form_data['action'] = 'Ajout';
+            $form_data['action'] = 'Ajout';
+            
             if($id != null && $this->fsManager->entryExists(["id" => $id]))
 			{
                 $form_data['single_sale'] = $this->fsManager->getSale($id);
@@ -79,13 +91,31 @@ class Flash extends CI_controller
             }
 		}
     }
+
     
     private function countSales() {
         return (int) $this->fsManager->count();
     }
+
    
     public function deleteSale($id) {
         $this->fsManager->deleteSale($id);
 		redirect(base_url('mkadmin/flash') ,'location');
+    }
+
+
+    public function max_passengers($field, $input)
+    {
+        if ($this->input->post($input)) {
+
+            $param = $this->fleMgr->getAircraft($this->input->post($input))->passengers;
+    
+            if ($field > $param) {
+                $this->form_validation->set_message('max_passengers', 'Le champ {field} doit être inférieur ou égal à la capacité de l\'appareil selectionné: '.$param.' Passagers');
+                return false;
+            } else {
+                return true;
+            }
+        }
     }
 }
