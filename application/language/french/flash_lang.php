@@ -13,7 +13,7 @@ $lang['flash_lang_request']             = "Devis";
 $lang['flash_lang_details']             = "Détails de l'appareil";
 $lang['flash_lang_interest']            = "Je suis intéressé";
 $lang['flash_lang_interested']          = "Je suis intéressé par cette vente flash, voici mes coordonnées pour me contacter ";
-$lang['flash_lang_capacity']            = "Capacité Max";
+$lang['flash_lang_capacity']            = "Sièges Disp.";
 $lang['flash_lang_gender']              = "Civilité";
 $lang['flash_lang_gender_mrs']          = "Mme";
 $lang['flash_lang_gender_ms']           = "Mlle";
@@ -37,12 +37,13 @@ $lang['flash_lang_p42']                 = "Notre collaboration avec de nombreux 
 $lang['flash_lang_p5']                  = "Notre équipe se tient à votre disposition 24h/24 7j/7 au ";
 $lang['flash_lang_p51']                 = " si vous souhaitez obtenir davantage de conseils ou simplement en savoir plus sur ces ventes flash.";
 $lang['flash_lang_p6']                  = "Les prix affichés sont indicatifs et ne sont pas contractuels. Merci de nous contacter via notre formulaire vente flash « Devis » ou par téléphone au +33 1 00 00 00 00 pour obtenir un prix définitif.";
+$lang['flash_lang_airc_comp_detail']    = "Détail complet de l'appareil";
 
 // Aircraft details
 $lang['flash_lang_detail_type']         = "Type d'appareil";
 $lang['flash_lang_detail_speed']        = "Vitesse de croisière Max";
 $lang['flash_lang_detail_range']        = "Autonomie";
-$lang['flash_lang_detail_passengers']   = "Passagers Max";
+$lang['flash_lang_detail_passengers']   = "Capacié Passagers";
 $lang['flash_lang_detail_crew']         = "Personel de bord";
 
 $lang['flash_lang_detail_close']        = "FERMER"; 
@@ -50,3 +51,5 @@ $lang['flash_lang_detail_close']        = "FERMER";
 // SUCCESS MAIL
 $lang['flash_lang_email_success']       = "Votre demande a été envoyée avec succès.";
 $lang['flash_lang_email_error']         = "Une erreur est survenue lors de l'envoi de votre demande. Veuillez réessayer ou nous contacter par téléphone.";
+// Error Label
+$lang['flash_lang_form_errors_label']	= "Les informations saisies sont incorrectes";

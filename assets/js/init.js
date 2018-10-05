@@ -60,19 +60,26 @@ $(document).ready(function() {
 
 // Select all links with hashes
 
+    function smoothScrollTo(target, speed = 1000, easing = 'easeInOutQuad') {
+        $('html, body').animate( { scrollTop: $(target).offset().top - 70}, speed, easing );
+    }
+
     $('.js-scrollTo').on('click', function(e) { // Au clic sur un élément
 
         let page = $(this).attr('href'); // Page cible
 
-        let speed = 1000; // Durée de l'animation (en ms)
-
-        let easing = 'easeInQuad';
-
-        $('html, body').animate( { scrollTop: $(page).offset().top - 50}, speed, easing ); // Go
+        smoothScrollTo(page);
 
         return false;
 
     });
+
+    // Go to error messages on load
+    var errorToTarget = $('#error-scroll-target');
+    if (errorToTarget.length) {
+        smoothScrollTo(errorToTarget);
+    }
+    console.log($(document).width())
 
 /****    END smooth scroll   ****/
 
@@ -197,6 +204,7 @@ $(document).ready(function() {
             let collapsBody = el.children(".collapsible-body");
 
             let collapsHeader = el.children(".collapsible-header");
+            let aircraftDetailPageLink = $('#aircraft-details-page');
 
              
 
@@ -219,8 +227,12 @@ $(document).ready(function() {
             
 
             // put sale id into submit btn value
-
             mailSubmit.val(collapsHeader.find(saleInfos).attr('data-sale'));
+            
+
+            // put aircraft id into complete details link
+            aircraftDetailPageLink.attr('href', aircraftDetailPageLink.attr('data-fleet-url') + collapsHeader.find(saleInfos).attr('data-aircraft'));
+
 
             
 

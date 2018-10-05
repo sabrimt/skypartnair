@@ -300,7 +300,8 @@ $content='content_' . $lng;
 		</div>
 	</div>
 	<div class="parallax">
-		<?php echo img('plan2.png', 'image vol de jet privé', '');?>
+		<?php echo img('plan2.png', 'image vol de jet privé', 'plan1');?>
+		<?php echo img('plan2.png', 'image vol de jet privé', 'plan2');?>
 	</div>
 </div>
 <!-- FIN QUATRIEME BLOC -->

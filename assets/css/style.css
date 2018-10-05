@@ -551,6 +551,41 @@ p {line-height: 2rem;}
 /** END home blocks infos links **/
 
 /** PICTO LINKS: PRIVATE JET CHARTER **/
+#index-banner3 .plan1 {
+    position: absolute;
+    -webkit-filter: invert(65%);
+    animation: slide-img 240s linear infinite;
+    -moz-animation: slide-img 240s linear infinite;
+    -webkit-animation: slide-img 240s linear infinite;
+}
+#index-banner3 .plan2 {
+    position: absolute;
+    -webkit-filter: invert(65%);
+    animation: slide-img-2 240s linear infinite;
+    -moz-animation: slide-img-2 240s linear infinite;
+    -webkit-animation: slide-img-2 240s linear infinite;
+}
+
+@-webkit-keyframes slide-img {
+    0%  { left: -70%; }
+    20%  { left: -20%; }
+    40%  { left: 30%; }
+    60% { left: 80%; }
+    80% { left: 130%; }
+    99.99%{ left: 180%; }
+ }
+
+@-webkit-keyframes slide-img-2 {
+    0%  { left: 55%; }
+    20%  { left: 105%; }
+    40%  { left: 155%; }
+    50%  { left: 180%;}
+    50.01% {  left: -70%; }
+    60% { left: -45%; }
+    80% { left: 5%; }
+    100%{ left: 55%;}
+ }
+
 .picto-link {
     position: relative;
     min-height: 80px !important;
@@ -826,7 +861,7 @@ footer li a:hover {font-weight: 300;}
         width: auto;
     }
 }
-@media screen and (max-width : 640px) {
+@media screen and (max-width : 600px) {
     .collapsible-body.minheight {
         height: 29rem;
     }
@@ -836,7 +871,7 @@ footer li a:hover {font-weight: 300;}
     }
 }
 
-@media screen and (max-width : 640px) {
+@media screen and (max-width : 580px) {
     #mail-form-content input, #mail-form-content label, #mail-form-content textarea, #mail-form-content .select-dropdown, #mail-form-content div {
         margin-left: 0;
         padding: 0;
@@ -1146,6 +1181,7 @@ legend.flow-text {
 /*  margin-left: 1rem;*/
 /*  margin-right: 0rem;*/
 }
+
 
 /* svg for parallax */
 svg {
