@@ -78,7 +78,7 @@ if (isset($artitre) && !empty($artitre)):
 
 
 <div class="row last-atc-1" style="margin-bottom:0; position: relative;">
-	<h3 class="red-text text-darken-5"><?= t('blog_lang_post_list_title') . (isset($artitre) ? '' : t('blog_lang_post_list_cat_title', strtoupper($articles[0]->category->$category))); ?></h3>
+	<h3 class="red-text text-darken-5"><?= t('blog_lang_post_list_title') . (isset($artitre) ? '' : t('blog_lang_post_list_cat_title', mb_strtoupper($articles[0]->category->$category))); ?></h3>
 	
 	<?php foreach ($articles as $article): ?>
 	<div class="col s12 m6 l4 article_item">

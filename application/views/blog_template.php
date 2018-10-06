@@ -40,11 +40,13 @@ $content='content_' . $lng;?>
 					<?= img('icons/round-google-plus.svg', 'suivez nous google plus', "" )?> 
 				</div>
 			</div>
-      
+			<section id="focus-content">
+			
 
-      <?= $view ?>
+      			<?= $view ?>
 
 		
+			</section>
 		</div>
       <!-- *************** BLOC DE DROITE ********************* -->
 		<div class="col s12 l3 center-align">

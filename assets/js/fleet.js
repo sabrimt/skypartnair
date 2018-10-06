@@ -11,8 +11,6 @@ $(document).ready(function(){
     /******** END filter form ********/
 
     /****  AJAX  ****/
-    
-
             $("#fleet-filter-form").submit(function(event) {
                 event.preventDefault();
                 

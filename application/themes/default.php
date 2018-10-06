@@ -95,7 +95,7 @@
                                 <a href="<?= base_url("en").$this->uri->uri_string() ?>" class="badgelang"><span class="badge <?= $lng == "en" ? "badge-lng" : "" ?> en" >EN</span></a>
                             </li>
                         </ul>   <!-- FIN UL PRINCIPAL NAV -->
-                        <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons">menu</i></a>
+                        <a href="#" data-activates="slide-out" class="button-collapse right red-text text-darken-5"><i class="material-icons">menu</i></a>
                     </div>      <!-- FIN DIV BLOC MENU NAV -->
                 </div>          <!-- FIN ROW -->
             </div>              <!-- FIN DIV NAV CONTAINER -->
@@ -106,23 +106,27 @@
         <li>
             <a href="<?= site_url(); ?>"><?= img('logo.jpg', 'sky partnair affretement d\'avion', 'logo-mobile' )?> </a>
         </li>
+        <li class="valign-wrapper">
+            <a href="<?= base_url("fr").$this->uri->uri_string() ?>" class="badgelang left"><span class="<?= $lng == "fr" ? "badge-lng" : "" ?> fr" style="padding: .3rem;<?= $lng == "fr" ? " background: rgba(23, 42, 131, 0.15);" : ""; ?>">FR</span></a>
+            <a href="<?= base_url("en").$this->uri->uri_string() ?>" class="badgelang left"><span class="<?= $lng == "en" ? "badge-lng" : "" ?> en" style="padding: .3rem;<?= $lng == "en" ? " background: rgba(155, 53, 50, 0.15);" : ""; ?>">EN</span></a>
+        </li>
         <li><a href="<?= site_url("privatejet/") ?>"><?= t("default_layout_nav_private_jet") ?></a></li>
         <li><a href="<?= site_url("group/") ?>"><?= t("default_layout_nav_group_flights") ?></a></li>
         <li><a href="<?= site_url() ?>">SKY PARTNAIR</a></li>
         <li><a href="<?= site_url("fleet/") ?>"><?= t("default_layout_nav_fleet") ?></a></li>
         <li><a href="<?= site_url("flash/") ?>"><?= t("default_layout_nav_flash_sales") ?></a></li>
         <li><a href="<?= site_url("blog/") ?>">BLOG</a></li>
-        <li class="left">
-            <a href="<?= base_url("fr").$this->uri->uri_string() ?>" class="badgelang"><span class="badge" style="background-color: #172983; margin-left:0;">FR</span></a>
-            <a href="<?= base_url("en").$this->uri->uri_string() ?>" class="badgelang"><span class="badge" style="background-color: #942725; margin-left:0;">EN</span></a>
-        </li>
     </ul>       <!-- FIN UL MENU NAV MOBILE -->
 <!-- ********************************************* FIN NAVBAR ************************************************** -->
 
     <!-- DEBUT BOUTON BARRE DEVIS QUAND SCROLL 450 -->
-    <?php $twitter = '<svg class="iconbar" style="position: relative; width:24px;height:24px; transform: scale(1.2); margin: auto 10px;" viewBox="0 0 24 24">
-    <path fill="#ffffff" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
-</svg>'; ?>
+    <div class="fixed-action-btn" id="scroll-back2top" style="display: none;">
+        <a class="btn-floating btn-large deval js-scrollTo-focus" href="#focus-content">
+            <i class="large material-icons" style="font-weight: 600;">vertical_align_bottom</i>
+        </a>
+    </div>
+
+    <?php $twitter = '<svg class="iconbar" style="position: relative; width:24px;height:24px; transform: scale(1.2); margin: auto 10px;" viewBox="0 0 24 24"><path fill="#ffffff" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" /></svg>'; ?>
     <div class="fixed-action-btn toolbar" id="magicdevis">
         <a class="btn-floating btn-large deval">
             <i class="large material-icons">send</i>
@@ -134,6 +138,7 @@
             <li class="col s3 waves-effect waves-light"><a class="bottom-links" style="display:flex;" href="https://twitter.com/login" target="_blank"> <?= $twitter ?>FB - T - I</a></li>
         </ul>
     </div>
+    <div id="top-focus-scroll"></div>
 
     <!-- FIN BOUTON BARRE DEVIS QUAND SCROLL 450 -->
  <!-- ********************************************* CONTENU ENVOYÉ PAR LES CONTROLLERS  ********************** -->
@@ -220,14 +225,32 @@
     
     // Apparition du bouton barre-contact
     $(window).scroll(function() {
-
+        var scrollCont = $('#scroll-back2top');
         if ($(this).scrollTop() > ($(window).height()/2))
         {
-            $('#magicdevis').fadeIn();
+            scrollCont.find('.material-icons').html('vertical_align_top');
+            scrollCont.find('a').attr('href', '#top-focus-scroll');
+
+            scrollCont.css({ // slide up back-to-top Button
+                display: 'block',
+                bottom: '85px',
+                transition: 'bottom 200ms ease-in 0ms'
+            });
+
+            $('#magicdevis').fadeIn(); // show Quote button
         }
         else
         {
-            $('#magicdevis').fadeOut();
+            $('#magicdevis').fadeOut(); // hide Quote button
+
+            scrollCont.find('.material-icons').html('vertical_align_bottom');
+            scrollCont.find('a').attr('href', '#focus-content');
+
+            scrollCont.css({ // slide down back-to-top Button
+                display: !$('#focus-content').length ? 'none' : 'block',
+                bottom: '23px',
+                transition: 'bottom 200ms ease-in 150ms'
+            });
         }
     });
     

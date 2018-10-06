@@ -9,12 +9,12 @@ $type_lg = 'type_'.$lng;
 	</div>
 </div>
 
-<section class="row liste-ventes" style="background-color: #FAFAFA; margin-bottom: 0;">
+<section id="focus-content" class="row liste-ventes" style="background-color: #FAFAFA; margin-bottom: 0;">
 	<div class="col l8 s12 offset-l2" style="padding-left:2rem;">
 		<h1 class="red-text text-darken-4"><?= t("flash_lang_h1") ?></h1>
 		
 		<h2><?= t("flash_lang_h2") ?></h2>
-		<p><?= t("flash_lang_p") ?></p>
+		<p style="line-height: 1.5;"><?= t("flash_lang_p") ?></p>
 		<h3 class="success-flash-msg blue lighten-7 center z-depth-3">
 			<?= $session['email_sent']??"" ?>
 		</h3>
@@ -70,8 +70,8 @@ $type_lg = 'type_'.$lng;
 				<div class="row collapsible-header hoverable" style="padding-top:1rem;">
 					<div class="sale-infos-form col l3 m4 s12" data-sale="<?= $sale->id ?>" data-aircraft="<?= $sale->fleet->id ?>">
 						<div class="valign-wrapper space-around">
-							<strong><?= strtoupper($sale->departure) ?></strong>
-							<i class="material-icons rotate-item">&#xE539;</i><strong><?= strtoupper($sale->arrival) ?></strong>
+							<strong><?= mb_strtoupper($sale->departure) ?></strong>
+							<i class="material-icons rotate-item">&#xE539;</i><strong><?= mb_strtoupper($sale->arrival) ?></strong>
 						</div>
 						<div class="separator metal linear"></div>
 						<div class="left-align">

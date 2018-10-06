@@ -4,6 +4,8 @@ $title='title_' . $lng;
 $category='category_' . $lng;
 $description='description_' . $lng;
 $content='content_' . $lng;
+
+$onredy_form_anim = empty($_POST) ? 'onready-anim left-slide-anim' : '';
 ?>
     
 <!-- PREMIER PARALLAX AVEC FORMULAIRE -->
@@ -12,7 +14,7 @@ $content='content_' . $lng;
 
     <div class="section no-pad-bot">
         <div class="container">
-            <div class="row rowformul onready-anim left-slide-anim" style="transition-delay: .5s;">
+            <div class="row rowformul <?= $onredy_form_anim; ?>" style="transition-delay: .5s;">
 				<div class="formulaire col s3" style="position:relative;">
 
 					<!-- FORM VALIDATION -->
@@ -137,12 +139,12 @@ $content='content_' . $lng;
 
 <!-- PREMIER BLOC -->
 <div id="index-banner1" class="container animated-title animated-blocks"> 
-    <div class="section ">
+    <div id="focus-content" class="section ">
 		<h1 class="center-align top-slide-anim show-slide-anim"><?= t('home_lang_h1_bloc1') ?></h1>
 		<h2 class="center-align top-slide-anim show-slide-anim"><?= t('home_lang_h2_bloc1') ?></h2>
-		<div class="row roparal" style="display: flex; align-items: stretch;">
+		<div id="info-block-container" class="row roparal">
 			
-			<div class="info-block hoverable left-slide-anim show-slide-anim col s12 m4" onclick="document.location='<?= base_url('privatejet') ?>'">
+			<div class="info-block hoverable left-slide-anim show-slide-anim col s12" onclick="document.location='<?= base_url('privatejet') ?>'">
 				<div class="icon-block">
 					<div class="hover-calc">
 						<h4 class="center"><?= t('home_lang_btn_bloc1') ?></h4>
@@ -153,7 +155,7 @@ $content='content_' . $lng;
 				<p class="light"><?= t('home_lang_p_bloc1_1') ?></p>
 			</div>
 
-			<div class="info-block hoverable left-slide-anim show-slide-anim col s12 m4" onclick="document.location='<?= base_url('group') ?>'">
+			<div class="info-block hoverable left-slide-anim show-slide-anim col s12" onclick="document.location='<?= base_url('group') ?>'">
 				<div class="icon-block">
 					<div class="hover-calc">
 						<h4 class="center"><?= t('home_lang_btn_bloc1') ?></h4>
@@ -164,7 +166,7 @@ $content='content_' . $lng;
 				<p class="light"><?= t('home_lang_p_bloc1_2') ?></p>
 			</div>
 
-			<div class="info-block hoverable left-slide-anim show-slide-anim col s12 m4" onclick="document.location='<?= base_url('group') ?>'">
+			<div class="info-block hoverable left-slide-anim show-slide-anim col s12" onclick="document.location='<?= base_url('group') ?>'">
 				<div class="icon-block">
 					<div class="hover-calc">
 						<h4 class="center"><?= t('home_lang_btn_bloc1') ?></h4>
@@ -229,25 +231,25 @@ $content='content_' . $lng;
 
 
 <!-- TROISIEME BLOC --> 
-<div id="index-banner2" class="parallax-container animationjspar">
+<div id="index-banner2" class="parallax-container animationjspar" style="display: flex; align-items: center;">
 
     <div class="section no-pad-bot">
         <div class="container">
 			<div class="row">
 				<div class="col s12 center-align animationjs">
-					<div class="col l3 s6 blue-text text-darken-6">
+					<div class="col m3 s6 blue-text text-darken-6">
 						<span class="count" data-anim-num="7000">0</span>
 						<p class="txt-js"><?= t('home_lang_bloc3_count1') ?></p>
 					</div>
-					<div class="col l3 s6 blue-text text-darken-6">
+					<div class="col m3 s6 blue-text text-darken-6">
 						<span class="count" data-anim-num="10">100</span> 
 						<p class="txt-js"><?= t('home_lang_bloc3_count2') ?></p>
 					</div>
-					<div class="col l3 s6 blue-text text-darken-6">
+					<div class="col m3 s6 blue-text text-darken-6">
 						<span class="count" data-anim-num="96">0</span>
 						<p class="txt-js"><?= t('home_lang_bloc3_count3') ?></p>
 					</div>
-					<div class="col l3 s6 blue-text text-darken-6">
+					<div class="col m3 s6 blue-text text-darken-6">
 						<span class="count" data-anim-num="2">100</span>
 						<p class="txt-js"><?= t('home_lang_bloc3_count4') ?></p>
 					</div>
@@ -320,7 +322,7 @@ $content='content_' . $lng;
 				foreach ($articles as $articl):
 					?>
 
-				<div class="col s12 m6 l4 article_item left-slide-anim show-slide-anim">
+				<div class="col s12 m4 article_item left-slide-anim show-slide-anim">
 					<div class="card hoverable">
 						<div class="card-image tile">
 							<?= img($articl->picture_1, 'affretement jet privé', "photoblog" )?>

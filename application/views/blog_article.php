@@ -28,7 +28,7 @@ $content='content_' . $lng;?>
 </div>
 
 <div class="row  animated-title animated-blocks" style="position: relative;">
-	<h3 class="red-text text-darken-5 top-slide-anim show-slide-anim"><?= t('blog_lang_single_same_category_title', strtoupper($article->category->$category)); ?></h3>
+	<h3 class="red-text text-darken-5 top-slide-anim show-slide-anim"><?= t('blog_lang_single_same_category_title', mb_strtoupper($article->category->$category)); ?></h3>
 	<?php foreach ($voiraussi as $other): ?>
 		<a href="<?= base_url("/blog/displayarticle/$other->id") ?>" class="left-slide-anim show-slide-anim" style="display: block;">
 		<div class="col s12 l4 article_item">

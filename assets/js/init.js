@@ -18,35 +18,43 @@ $(document).ready(function() {
 
     $('.onready-anim').addClass('show-slide-anim');
 
-    /***** Sliding hidden Elements on ready *****/
+    /***** END Sliding hidden Elements on ready *****/
+
+    
+
+
+    /*** Show the scroll to main content button ***/
+
+    if ($('#focus-content').length > 0) {
+        $('#scroll-back2top').css({display: 'block'});
+    }
+
+    /***** END Show the scroll to main content button *****/
+
+
 
 
 
     // Effects on scroll
 
     var options = [
-
         {
-
             selector: '.move-list',
-
-            offset: 250,
-
+            offset: 200,
             callback: function(el) {
-
                 Materialize.showStaggeredList($(el));
-
             }
-
         }
-
     ];
 
     Materialize.scrollFire(options);
 
     
 
-    $('select').material_select();// Activates Materialize select
+
+
+// Activates Materialize select
+    $('select').material_select();
 
     $('#mail-form-content textarea').characterCounter();
 
@@ -56,19 +64,23 @@ $(document).ready(function() {
 
 /****    SMOOTH SCROLL   ****/
 
-
-
-// Select all links with hashes
-
     function smoothScrollTo(target, speed = 1000, easing = 'easeInOutQuad') {
         $('html, body').animate( { scrollTop: $(target).offset().top - 70}, speed, easing );
     }
 
     $('.js-scrollTo').on('click', function(e) { // Au clic sur un élément
-
         let page = $(this).attr('href'); // Page cible
 
         smoothScrollTo(page);
+
+        return false;
+
+    });
+
+    $('.js-scrollTo-focus').on('click', function(e) { // Au clic sur un élément
+        let page = $(this).attr('href'); // Page cible
+
+        smoothScrollTo(page, 500);
 
         return false;
 
@@ -79,7 +91,6 @@ $(document).ready(function() {
     if (errorToTarget.length) {
         smoothScrollTo(errorToTarget);
     }
-    console.log($(document).width())
 
 /****    END smooth scroll   ****/
 

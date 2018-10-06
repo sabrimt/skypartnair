@@ -18,6 +18,7 @@ class Fleet extends CI_Controller
         parent::__construct();
 //        $this->output->enable_profiler(TRUE);
         $this->load->model('Fleet_model', 'fleetMgr');
+		$this->lang->load("fleet_lang", $this->config->item('language'));
     }
 	/**
 	 * 

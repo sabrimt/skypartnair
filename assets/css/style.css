@@ -159,6 +159,11 @@ button.picker__close:focus {
 
  /* ************** HOMEPAGE ************** */
   /* NAVBAR */
+  @media only screen and (max-width: 1100px) {
+      .blocmenunav a {
+          font-size: .88rem !important;
+      }
+  }
  #topbar { background-color: #942725; height:20px;}
 .topbardev { margin:-3px; }
 .bloclogo { margin-top: 10px; }
@@ -180,6 +185,16 @@ nav ul a span.badge.en {border-top: 2px solid  #9B3532;}
 nav ul a,
 nav .brand-logo {color: #444; width: 100%; margin:0 auto;}
 nav ul a:hover {background-color: rgba(148, 39, 37, 0.2);}
+
+/* scroll back to top floating btn */
+#scroll-back2top {
+    opacity: .4;
+    transition: opacity .2s ease-out;
+}
+
+#scroll-back2top:hover {
+    opacity: .85;
+}
 
 /* FIN NAVBAR */
 
@@ -504,6 +519,14 @@ p {line-height: 2rem;}
 
 
 /**  HOME BLOCKS INFOS LINKS **/
+@media only screen and (min-width: 700px) {
+
+    #info-block-container {
+        display: flex;
+        align-items: stretch;
+    }
+}
+
 .info-block {
     padding: 1rem !important;
     cursor: pointer;
@@ -523,6 +546,7 @@ p {line-height: 2rem;}
 }
 .icon-block img {
     display: block;
+    min-width: 100%;
     transform: scale(1);
     transition: all .9s;
 }
@@ -1136,36 +1160,32 @@ legend.flow-text {
 /*    padding:2rem;*/
 }
 .animationjs {
-    margin-top:12rem;
     background-color: rgba(254, 254, 254, 0.6);
 /*    padding:2rem;*/
     line-height: 2;
 }
 @media only screen and (max-width : 887px) {
-    .animationjs {
-        margin-top:4rem;}
     .txt-js {
         font-size: 10pt;
     }
     .count, .countrevers {
-    margin-top:1rem;
-    font-size: 30pt;
-    font-weight: 500;
-}
+        margin-top:1rem;
+        font-size: 20pt;
+        font-weight: 500;
+    }
 }
 @media only screen and (max-width : 400px) {
     .animationjs {
-        margin-top:0;
         line-height: 1;
     }
     .txt-js {
         font-size: 8pt;
     }
     .count, .countrevers {
-    margin-top:1rem;
-    font-size: 20pt;
-    font-weight: 500;
-}
+        margin-top:1rem;
+        font-size: 15pt;
+        font-weight: 500;
+    }
 }
 
 /* ************** BLOC BLOG **************** */
