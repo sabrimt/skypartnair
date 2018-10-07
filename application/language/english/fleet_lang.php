@@ -20,3 +20,19 @@ $lang['fleet_lang_item_no_item']    		= "No aircraft matches your criteria.";
 $lang['fleet_lang_item_range']    			= "Range";
 $lang['fleet_lang_item_capacity']    		= "Max Capacity";
 $lang['fleet_lang_item_detail_btn']    		= "Details";
+
+// Single Aircraft
+$lang['fleet_lang_single_title']    		= "TECHNICAL DESCRIPTION : ";
+$lang['fleet_lang_single_tab_features']    	= "MAIN FEATURES";
+$lang['fleet_lang_single_tab_photos']    	= "PHOTOS";
+
+$lang['fleet_lang_single_feat_manufacturer']= "Manufacturer";
+$lang['fleet_lang_single_feat_model'] 		= "Model";
+$lang['fleet_lang_single_feat_origin'] 		= "Country of Origin";
+$lang['fleet_lang_single_feat_type'] 		= "Aircraft Type";
+$lang['fleet_lang_single_feat_category'] 	= "Category";
+$lang['fleet_lang_single_feat_speed'] 		= "Cruising Speed";
+$lang['fleet_lang_single_feat_range'] 		= "Range";
+$lang['fleet_lang_single_feat_capacity'] 	= "Max Capacity";
+$lang['fleet_lang_single_feat_passengers'] 	= "%d Passengers";
+$lang['fleet_lang_single_feat_crew'] 		= "Crew Generally Found";

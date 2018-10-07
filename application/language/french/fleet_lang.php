@@ -20,3 +20,19 @@ $lang['fleet_lang_item_no_item']    		= "Aucun appareil correspondant à vos cri
 $lang['fleet_lang_item_range']    			= "Range";
 $lang['fleet_lang_item_capacity']    		= "Capacité Max";
 $lang['fleet_lang_item_detail_btn']    		= "Détails";
+
+// Single Aircraft
+$lang['fleet_lang_single_title']    		= "FICHE TECHNIQUE : ";
+$lang['fleet_lang_single_tab_features']    	= "CARACTÉRISTIQUES";
+$lang['fleet_lang_single_tab_photos']    	= "PHOTOS";
+
+$lang['fleet_lang_single_feat_manufacturer']= "Constructeur";
+$lang['fleet_lang_single_feat_model'] 		= "Model";
+$lang['fleet_lang_single_feat_origin'] 		= "Pays d'origine";
+$lang['fleet_lang_single_feat_type'] 		= "Type d'appareil";
+$lang['fleet_lang_single_feat_category'] 	= "Catégorie";
+$lang['fleet_lang_single_feat_speed'] 		= "Vitesse de croisière";
+$lang['fleet_lang_single_feat_range'] 		= "Autonomie";
+$lang['fleet_lang_single_feat_capacity'] 	= "Capacité Max";
+$lang['fleet_lang_single_feat_passengers'] 	= "%d Passagers";
+$lang['fleet_lang_single_feat_crew'] 		= "Équipage généralement constaté";

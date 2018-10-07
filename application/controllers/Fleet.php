@@ -122,6 +122,7 @@ class Fleet extends CI_Controller
 		{
 			$data['single_aircraft'] = $this->fleetMgr->getAircraft($id);
 			$this->layout->addCss('fleet');
+			$this->layout->addJs('fleet');
 			$this->layout->view("aircraft_details", $data);
 		}
 		else {

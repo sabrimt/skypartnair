@@ -176,18 +176,61 @@ ul.list-container {
 .aircraft_h2 {
     margin-top:0;
 }
-.flagpro {
-    margin-top: 0.27rem !important;
-    margin-left:0.3rem;
+
+.aircraft_h2 img {
+    margin-left: 1rem;
 }
+
+.photo-card img {
+    width: 100%;
+}
+
 .bloc-photo {
     padding:1rem;
-    
 }
-/*.plan-aircraft {
-    -ms-transform: rotate(90deg); 
-    -webkit-transform: rotate(90deg); 
-    transform: rotate(90deg);
-    vertical-align: top;
-    height:100%;
-}*/
+
+li.tab * {
+    color: #47559D !important;
+}
+
+.indicator {
+    background-color: #8791BF  !important;
+}
+
+.custom-card-tabs {
+    height: max-content;
+    position: relative;
+}
+
+.custom-tabs {
+    height: max-content;
+}
+
+.custom-tabs .tab img {
+    border-radius: 2px;
+    border: 2px solid #8791BF;
+    width: 100% !important;
+}
+
+.custom-tabs .tab {
+    margin-bottom: .4rem;
+    opacity: .5;
+    transition: all .3s ease-out;
+}
+.custom-tabs .tab:hover {
+    opacity: .7;
+    transition: all .3s ease-out;
+}
+.custom-tabs .tab.active {
+    opacity: 1;
+    transform: scale(1.10);
+    transition: all .3s ease-in;
+}
+
+.photo-card {
+    display: none;
+}
+
+#description-tab .card-content div {
+    padding-bottom: .3rem;
+}
